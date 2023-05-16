@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Crawl_Avatar_Facebook</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.7.0.5276" />
+    <PackageReference Include="Leaf.xNet" Version="5.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv-windesktop 4.6.0.5131\libs\Emgu.CV.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
