@@ -33,6 +33,7 @@
             button3 = new Button();
             label1 = new Label();
             button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -78,17 +79,28 @@
             // 
             button4.Location = new Point(321, 12);
             button4.Name = "button4";
-            button4.Size = new Size(191, 23);
+            button4.Size = new Size(142, 23);
             button4.TabIndex = 4;
-            button4.Text = "Bắt đầu lọc ảnh có mặt người";
+            button4.Text = "Bắt đầu lọc ảnh thường";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(469, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(118, 23);
+            button5.TabIndex = 5;
+            button5.Text = "Bắt đầu lọc ảnh kỹ";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(524, 66);
+            ClientSize = new Size(909, 66);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(label1);
             Controls.Add(button3);
@@ -107,5 +119,6 @@
         private Button button3;
         private Label label1;
         private Button button4;
+        private Button button5;
     }
 }

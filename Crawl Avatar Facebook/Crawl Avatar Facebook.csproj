@@ -12,6 +12,8 @@
   <ItemGroup>
     <PackageReference Include="Emgu.CV" Version="4.7.0.5276" />
     <PackageReference Include="Leaf.xNet" Version="5.2.10" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.Face" Version="2.8.0-preview.3" />
   </ItemGroup>
 
   <ItemGroup>

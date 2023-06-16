@@ -12,6 +12,7 @@ namespace Crawl_Avatar_Facebook.BUS
     {
 
         public static string[] useragents = File.ReadAllLines("Useragent.txt");
+        public static string[] proxies = File.ReadAllLines("proxy.txt");
 
         public static Random random = new Random();
 
@@ -36,7 +37,7 @@ namespace Crawl_Avatar_Facebook.BUS
                     lock (lockRandom)
                     {
                         httpRequest.UserAgent = useragents[random.Next(useragents.Length)];
-                        httpRequest.Proxy = Leaf.xNet.HttpProxyC­lient.Parse($"192.168.1.114:400{random.Next(1,11)}");
+                        httpRequest.Proxy = Leaf.xNet.HttpProxyC­lient.Parse(proxies[random.Next(proxies.Length)]);
                     }
 
                     string filePath = $"Avatar\\{uid}.jpg";
